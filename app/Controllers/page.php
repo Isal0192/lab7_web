@@ -1,23 +1,41 @@
 <?php
-namespace App\Controllers;
-use CodeIgniter\Controller;
 
-class page extends BaseController
+namespace App\Controllers;
+
+use App\Controllers\BaseController;
+
+class Page extends BaseController
 {
-    public function about()
-    {
-        echo "Hello World, from about";
-    }
+    // public function about()
+    // {
+    //     return view('template/about', [
+    //         'title'   => 'Halaman About',
+    //         'content' => 'Ini adalah halaman About.'
+    //     ]);
+    // }
+
     public function contact()
     {
-        echo "Hello World, from contact";
+        return view('template/page', [
+            'title'   => 'Halaman Contact',
+            'content' => 'Ini adalah halaman Contact.'
+        ]);
     }
-    public function faq()
+
+    public function faqs()
     {
-        echo "Hello World, from faq";
+        return view('template/page', [
+            'title'   => 'Halaman FAQ',
+            'content' => 'Ini adalah halaman FAQ.'
+        ]);
     }
+
     public function tos()
     {
-        echo "Hello World, from tos";
+        return view('template/page', [
+            'title'   => 'Halaman Term of Services',
+            'content' => 'Ini adalah halaman Term of Services.'
+        ]);
     }
 }
+?>
