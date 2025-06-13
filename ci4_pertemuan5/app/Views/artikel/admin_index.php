@@ -32,12 +32,11 @@
                             </td>
                             <td><?= $row['status']; ?></td>
                             <td>
-                                <a class="btn" href="<?= base_url('/admin/artikel/edit/' .
-$row['id']);?>">Ubah</a>
-                                <a class="btn btn-danger" onclick="return confirm('Yakin
-menghapus data?');" href="<?= base_url('/admin/artikel/delete/' .
-$row['id']);?>">Hapus</a>
+                                <a class="btn" href="<?= base_url('/admin/artikel/edit/' .$row['id']);?>">Ubah</a>
+                                <a class="btn btn-danger" onclick="return confirm('Yakin menghapus data?');"
+                                    href="<?= base_url('/admin/artikel/delete/' .$row['id']);?>">Hapus</a>
                             </td>
+                            <?= $pager->links(); ?>
                         </tr>
                         <?php endforeach; else: ?>
                         <tr>

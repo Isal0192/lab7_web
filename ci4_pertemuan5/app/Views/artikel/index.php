@@ -20,6 +20,7 @@ $row['judul']; ?></a>
                         <img src="<?= base_url('/gambar/' . $row['gambar']);?>" alt="<?=
 $row['judul']; ?>">
                         <p><?= substr($row['isi'], 0, 200); ?></p>
+                        <a href="<?= base_url('/artikel/' . $row['slug']); ?>" class="read-more">Baca selengkapnya</a>
                 </article>
                 <hr class="divider" />
                 <?php endforeach; else: ?>

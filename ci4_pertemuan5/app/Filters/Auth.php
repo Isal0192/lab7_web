@@ -11,13 +11,14 @@ class Auth implements FilterInterface
         // jika user belum login
         $session = \Config\Services::session();
         if(! session()->get('logged_in')){
-        // maka redirct ke halaman login
             return redirect()->to('/user/login');
         }
-        }
-        public function after(RequestInterface $request, ResponseInterface
-            $response, $arguments = null)
-        {
-        // Do something here
     }
+    public function after(RequestInterface $request, ResponseInterface
+        $response, $arguments = null)
+    {
+        // $session = \Config\Services::session();
+        
+    }
+    
 }

@@ -48,6 +48,7 @@ class User extends BaseController
             }
         } else {
             $session->setFlashdata('flash_msg', 'Email tidak terdaftar.');
+            dd($session->get());
             return redirect()->to('/user/login');
         }
     }
@@ -55,5 +56,5 @@ class User extends BaseController
     public function logout(){
         session()->destroy();
         return redirect()->to('/user/login');
-    }
+    }   
 }
