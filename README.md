@@ -4,7 +4,7 @@ Ini adalah repository yang berisi koleksi tugas-tugas praktikum saya dari pertem
 
 ---
 
-**Informasi Mahasiswa:**
+**Saya:**
 
 * **Nama:** Faisal Fajar
 * **NIM:** 312310123
