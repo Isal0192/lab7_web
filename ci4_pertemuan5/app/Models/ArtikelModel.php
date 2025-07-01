@@ -7,4 +7,7 @@ class ArtikelModel extends Model
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
     protected $allowedFields = ['judul', 'isi', 'status', 'slug', 'gambar', 'created_at'];
+    protected $useTimestamps = true;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
 }   
